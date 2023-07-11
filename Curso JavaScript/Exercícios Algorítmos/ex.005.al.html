@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorítmos</title>
+</head>
+<style>
+    body{
+        background-color: rgb(189, 189, 137);
+        color: black;
+        font: normal 14pt  Arial;
+    }
+    h1{
+        color: rgb(95, 83, 83);
+    }
+</style>
+<body>
+<h1>Exercícios de algorítmos - 005 - DOM</h1>
+<p>Faça um programa que leia as duas notas de um aluno em uma matéria e mostre
+    na tela a sua média na disciplina.</p>
+    Ex:
+    Nota 1: 4.5;
+    Nota 2: 8.5;
+    A média entre 4.5 e 8.5 é igual a 6.5</p>    
+</body>
+<script>
+    var nome = window.prompt('Olá! Qual é o seu nome?')
+    window.alert(`Olá ${nome}, vamos calcular uma média?`)
+    var n1 = Number(window.prompt('Primeira nota do aluno: '))
+    var n2 = Number(window.prompt('Segunda nota do aluno: '))
+    var média = (n1+n2)/2
+    window.alert(`A média entre ${n1} e ${n2} é igual a ${média}`)
+    //exercitei a interação com o prompt e operadores matemáticos
+</script>
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorítimos</title>
+<style>
+    body{background-color: bisque;
+        font: normal 14pt arial;
+    }
+    h1{font:bolder 16pt}
+</style>
+</head>
+<body>
+<h1>
+    Exercícios de Algoritmos - 008 
+</h1>    
+<p>Professor Gustavo Guanabara</p>
+<p>Executado por Bruna Baria</p>
+<p>Desenvolva um programa que leia uma distância em metros e mostre os valores relativos em outras medidas</p>
+<p>Ex: digite uma distância em metros: 185.72 metros</p>
+<p>0.18572 km</p>
+<p>1.8572 hm</p>
+<p>18.572 dam</p>
+<p>1857.2 dm</p>
+<p>18572.0 cm</p>
+<p>185720 mm</p>
+</body>
+<script>
+   var metros = Number(window.prompt('Digite uma distância em métros: '))
+   var dam = metros/10
+   var hm = metros /100 
+   var km = metros/1000
+   var dm = metros*10
+   var cm = metros*100
+   var mm = metros*1000
+   window.alert(`A distancia ${metros} metros corresponde à: ${dam} decâmetros,${hm} hectômetros,${km}kilômetros,${dm} decímetros,${cm} centímetros,${mm} milímetros`)
+</script>
+</html>

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorítimos</title>
+<style>
+    body{background-color: bisque;
+        font: normal 14pt arial;
+    }
+    h1{font:bolder 16pt}
+</style>
+</head>
+<body>
+<h1>
+    Exercícios de Algoritmos - 008 
+</h1>    
+<p>Professor Gustavo Guanabara</p>
+<p>Executado por Bruna Baria</p>
+<p>Desenvolva um programa que leia uma distância em metros e mostre os valores relativos em outras medidas</p>
+<p>Ex: digite uma distância em metros: 185.72 metros</p>
+<p>Resposta: 0.18572 km 1.8572 hm 18.572 dam 1857.2 dm 18572.0 cm 185720 mm</p>
+Informe uma distância em metros: <input type="number" name="distancia" id="distancia">
+<input type="button" value="converter" onclick="calcular()">
+<div id="res"></div>
+</body>
+<script>
+    window.alert(`Você está acessando uma página de exercícios de conversão de distâncias`)
+   function calcular(){
+    var metro = document.querySelector("input#distancia")
+    var m = Number(metro.value)
+    var dam= m/10
+    var hm= m/100
+    var km= m/1000
+    var dm=m*10
+    var cm=m*100
+    var mm=m*1000
+    res.innerHTML=`A distância <strong>${m}</strong> metros equivale à: <br/><strong>${dam}</strong> decâmetros;<br/><strong>${hm}</strong> hectômetros;<br/><strong>${km}</strong> kilômetros;<br/><strong>${dm}</strong> decímetros;<br/><strong>${cm}</strong> centímetros;<br/><strong>${mm}</strong> milímetros.`
+   }
+</script>
+</html>

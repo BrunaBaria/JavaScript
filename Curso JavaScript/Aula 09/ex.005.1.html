@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula_005_Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(29, 39, 126);
+            color: antiquewhite;
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p>Seleção e edição de elemento por Marca ou Tag utilizando o getElementsByTagName</p>
+    <div>Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var paragrafo1 = window.document.getElementsByTagName('p')[1]
+        window.document.write("Está escrito assim: "+paragrafo1.innerHTML)
+        paragrafo1.style.color = 'green'
+        corpo.style.background = 'black'
+    </script>
+</body>
+</html>

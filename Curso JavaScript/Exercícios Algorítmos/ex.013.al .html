@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorítimos</title>
+<style>
+    body{background-color: rgb(250, 240, 228);
+        font: normal 14pt arial;
+    }
+    h1{font:bolder 16pt}
+</style>
+</head>
+<body>
+<h1>
+    Exercícios de Algoritmos - 013
+</h1>    
+    <p>Professor Gustavo Guanabara</p>
+    <p>Executado por Bruna Baria</p>
+    <p>Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.</p>
+    Informe o salário do funcionário: <input type="number" name="txtsal" id="txtsal">
+    <input type="button" value="calcular" onclick="calcular()">
+    <div id="res"></div>
+</body>
+<script>
+    function calcular(){
+        var sal =document.querySelector('input#txtsal')
+        var salario = Number(sal.value)
+        var aumento = salario+(salario*(15/100))
+        res.innerHTML = `O salário do funcionário com 15% de aumento será de <strong>R$ ${aumento}</strong>`
+    }
+</script>
+</html>

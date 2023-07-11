@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalisade</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+</style>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <p>De qual país você nasceu?</p>
+    <input type="text" name="país" id="país">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+</body>
+<script>
+    function verificar(){
+        var país = window.document.querySelector('input#país')
+        var res = window.document.querySelector('div#res')
+        if (país = 'Brasil'){
+            res.innerHTML = `você é <strong>Brasileiro(a)</strong>`
+        }
+            res.innerHTML = `Você é <strong>Estrangeiro</strong>`
+    }
+
+</script>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorítimos</title>
+<style>
+    body{background-color: bisque;
+        font: normal 14pt arial;
+    }
+    h1{font:bolder 16pt}
+</style>
+</head>
+<body>
+<h1>
+    Exercícios de Algoritmos - 009 
+</h1>    
+    <p>Professor Gustavo Guanabara</p>
+    <p>Executado por Bruna Baria</p>
+    <p>Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira(em R$) e mostre quantos dólares ela pode comprar.</p>
+    <p>Considere US$1,00 = R$ 3,45</p>
+
+    Quantos R$ você possui? <input type="number" name="reais" id="reais">
+    <input type="button" value="converter" onclick="calcular()">
+    <div id = "resultado"></div>
+</body>
+<script>
+    function calcular(){
+        var r = window.document.querySelector('input#reais')
+        var reais = Number(r.value)
+        var dolar = 3.45
+        var dolar_compra = reais/dolar
+        resultado.innerHTML = `Você pode comprar <strong> US$ ${dolar_compra.toFixed(2).replace('.',',')}</strong> com <strong>R$ ${reais.toFixed(2).replace('.',',')}</strong>`
+    }
+</script>
+</html>
