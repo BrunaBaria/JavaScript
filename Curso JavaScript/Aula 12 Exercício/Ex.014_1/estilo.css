@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(233, 117, 117);
+    font: normal 14pt Helvetica;
+}
+header{
+    color:antiquewhite;
+    text-align: center;
+    font: bold 14pt helvetica;
+}
+h2{
+    font: normal 20px helvetica;
+}
+section{
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin:auto;
+    padding: 20px;
+    width:400px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color: antiquewhite;
+}

@@ -5,25 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítmos_DOM</title>
+    <link rel="stylesheet" href="estiloex.04.css">
 </head>
-<style>
-   body{
-    color: aliceblue;
-    background-color: black;
-   }
-   h1{
-    font:normal
-   }
-   p{
-    font:normal 14pt arial;
-   }
-   div#Resultado{
-    margin-top: 20px;
-   }
-</style>
 <body>
 <h1>Exercícios Algorítmos - 004</h1>
-<p>Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.</p>
+<section>
+    <p>Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.</p>
     Ex:
     Digite um valor: 8;
     Digite outro valor: 5;
@@ -33,6 +20,10 @@
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="somar" onclick="soma()">
     <div id="Resultado">Resultado</div>
+</section>
+<footer>
+    <p>&copy;cursoemvideo</p>
+</footer>
 <script>
     function soma(){
         var tn1 = window.document.querySelector("input#txtn1")
@@ -43,5 +34,6 @@
         var s = n1+n2
         Resultado.innerHTML = `Resultado da soma entre ${n1} e ${n2} é <strong> ${s}</strong>`
     }
+    
 </script>
 </html>

@@ -1,0 +1,41 @@
+# Título
+## Título
+### Título
+---
+
+Lista numerada:
+1. Teste 
+0. Teste 2
+   1. Teste 3
+999. Teste 4
+
+Lista Demarcada:
+* Teste
+* Teste
+   * Teste
+* Teste
+
+Lista de Tarefas:
+- [x] Criar página principal
+- [ ] Cria página da loja
+- [x] Finalizar reunião com cliente
+- [ ] Receber pagamento
+
+Num | Nome | Nota
+---|---|---
+1 | Gustavo | 8,5
+2 | José | 10,0
+3 | Maria | 9,0
+
+Terminou a tabela
+
+"Não entendo direito para que serve o comando `document.getElementbyId()` da linguagem JavaScript"
+
+Olha meu programa em Python
+```
+num = int(input('Digite um valor: ')
+if num % 2 == 0:
+   print(f'O valor {num} é PAR')
+else:
+   print(f'O valor {num} é IMPAR)
+```

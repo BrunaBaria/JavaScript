@@ -1,0 +1,25 @@
+
+body{
+    color: rgb(5, 37, 65);
+    background-color: rgb(235, 163, 163);
+   }
+   h1{
+    font:normal;
+   }
+   section{
+    background-color: rgb(196, 197, 212);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.466);
+    width: 600px;
+   }
+   footer{
+    font-style: italic;
+   }
+   p{
+    font:normal 14pt arial;
+   }
+   div#Resultado{
+    margin-top: 20px;
+   }
+   
