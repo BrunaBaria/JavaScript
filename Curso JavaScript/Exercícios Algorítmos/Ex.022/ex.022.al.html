@@ -6,41 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="estilo.ex.022.css">
 </head>
+
 <body>
-<h1>
-    Exercícios de Algoritmos - 022
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
+    <header>
+        <h1>Exercícios de Algoritmos - 022</h1> 
+            <h3>Curso em video</h3>    
+    </header>
+    <section>
     <!--Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar. Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento; Se já estiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.-->
-    Nome do jovem: <input type="text" id="nome"></br>
-    Ano de seu nascimento: <input type="number" name="txtnasc" id="txtnasc"></br>
-    <input type="button" value="calcular" onclick="calcular()">
+        Nome do jovem: 
+        <input type="text" id="nome"></br>
+        <p></p>
+        Ano de seu nascimento: 
+        <input type="number" name="txtnasc" id="txtnasc"></br>
+        <p></p>
+         <input type="button" value="calcular" onclick="calcular()">
     <div id="res"></div>
+</section>
 </body>
-<script>
-    function calcular(){
-        var nome=document.querySelector('input#nome').value
-        var txtnasc=document.querySelector('input#txtnasc')
-        var nasc=Number(txtnasc.value)
-        var res=document.querySelector('div#res')
-        var agora = new Date()
-        var ano = agora.getFullYear()
-        var idade_hoje = ano-nasc
-        var diferença= Math.abs(18-idade_hoje)
-        res.innerHTML=`O jovem ${nome} tem ${idade_hoje} anos atualmente`
-        if(idade_hoje < 18){
-            res.innerHTML +=`<p>E faltam <strong>${diferença} anos </strong> para seu alistamento</p>`
-        }else {
-            res.innerHTML += `<p>Deve se alistar e passaram-se <strong>${diferença}</strong> anos do seu período de alistamento</p>`
-        }
-    }
-</script>
+<footer>
+    <p>Executado por &copy;brunabaria</p>
+</footer>
+<script src="script.js"></script>
 </html>
