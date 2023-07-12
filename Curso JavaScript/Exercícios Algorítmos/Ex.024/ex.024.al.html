@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="estilo.ex.24.css">
 </head>
 <body>
-<h1>
-    Exercícios de Algoritmos - 024
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <!--Faça um alogoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem, cobrando R$ 0.50 por Km para viagens até 200km e R$ 0.45 para viagens mais longas-->
+    <header>
+        <h1>
+            Exercícios de Algoritmos - 024
+        </h1>  
+    </header>
+    <section>
+        <div>Qual é a distância que você deseja percorrer?(km)</div>
+        <input type="number" name="txtkm" id="txtkm">
+        <input type="button" value="calcular" onclick="calcular()">
+        <div id = 'res'></div>
+        <!--Faça um alogoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem, cobrando R$ 0.50 por Km para viagens até 200km e R$ 0.45 para viagens mais longas-->
+
+    </section>
+   <footer>
+        <p>&copy;cursoemvideo</p>
+   </footer>
+   <script src="script.js"></script>
 </body>
+
 </html>
