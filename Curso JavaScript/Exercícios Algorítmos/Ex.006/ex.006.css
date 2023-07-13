@@ -1,0 +1,22 @@
+body{background-color: rgb(144, 196, 245);
+    font: normal 14pt arial;
+}
+h1{
+    color: rgb(23, 23, 87);
+    font:bolder 12pt;
+    text-align: center;
+}
+section{
+    background-color: rgb(248, 248, 248);
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+}
+div{
+    margin-top: 15px;
+}

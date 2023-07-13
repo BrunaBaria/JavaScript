@@ -1,0 +1,31 @@
+
+body{
+    background-color: rgb(253, 202, 242);
+    color: rgb(12, 13, 65);
+    font: normal 12pt  Arial;
+}
+h1{
+    font: bold 16pt arial;
+    color: rgb(50, 16, 95);
+    text-align: center;
+}
+section{
+    background-color: rgb(202, 194, 245);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+    width: 600px;
+    text-align: justify;
+    margin: auto;
+}
+input{
+    width: 50px ;
+}
+div#Resultado{
+    margin-top: 20px;
+    text-align: center;
+}
+footer{
+    margin-top: 10px;
+    text-align: center;
+}

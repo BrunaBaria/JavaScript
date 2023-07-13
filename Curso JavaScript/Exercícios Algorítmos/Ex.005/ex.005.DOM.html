@@ -5,46 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítmos</title>
+    <link rel="stylesheet" href="ex.005.css">
 </head>
-<style>
-    body{
-        background-color: rgb(235, 167, 220);
-        color: black;
-        font: normal 14pt  Arial;
-    }
-    h1{
-        color: rgb(43, 41, 41);
-    }
-    input{
-        width: 50px ;
-    }
-    div#Resultado{
-        margin-top: 20px;
-    }
-</style>
 <body>
-<h1>Exercícios de algorítmos - 005 - DOM</h1>
-<p>Faça um programa que leia as duas notas de um aluno em uma matéria e mostre
-    na tela a sua média na disciplina.</p>
-    Ex:
-    Nota 1: 4.5;
-    Nota 2: 8.5;
-    A média entre 4.5 e 8.5 é igual a 6.5</p>  
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2"> =
-    <input type="button" value="média" value="calcular" onclick="calcular()">
-    <div id="Resultado">Resultado</div>
+    <h1>Exercícios de algorítmos - 005 - DOM</h1>
+<section>
+    <p>Faça um programa que leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina.</p>
+        Ex:
+        Nota 1: 4.5;
+        Nota 2: 8.5;
+        A média entre 4.5 e 8.5 é igual a 6.5</p>  
+       <center> <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2"> =
+        <input type="button" value="média" value="calcular" onclick="calcular()"></center>
+        <div id="Resultado">Resultado</div>
+</section>
+<footer>
+    &copy;cursoemvideo
+</footer>
+    <script src="scrip.ex.005.js"></script>
 </body>
-<script>
-        var nome = window.prompt('Olá! Qual é o seu nome?')
-        window.alert(`Olá ${nome}, vamos calcular uma média?`)
-    function calcular(){
-        var tn1 = window.document.querySelector('input#txtn1')
-        var tn2 = window.document.querySelector('input#txtn2')
-        var n1 =Number(tn1.value)
-        var n2=Number(tn2.value)
-        var média = (n1+n2)/2
-        Resultado.innerHTML =`A média entre ${n1} e ${n2} é <strong> ${média}</strong>`
-    }
-</script>
 </html>
