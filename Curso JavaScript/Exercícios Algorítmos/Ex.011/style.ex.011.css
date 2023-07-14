@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(254, 230, 255);
+    font: normal 14pt arial;
+}
+h1{
+    font:normal 18pt arial;
+    text-align: center;
+}
+section{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+}
+div#resultado{
+    margin-top: 10px;
+}

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorítimos</title>
+    <link rel="stylesheet" href="style.ex.029.css">
+</head>
+<body>
+
+    <header>
+        <h1>Exercícios de Algoritmos - 029</h1>  
+    </header>    
+    <section>      
+        <h2>
+            Desenvolva um programa que leia o nome de um funcionário, seu salário,
+            quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de
+            acordo com a tabela a seguir:
+        </h2>
+        <p>
+            - Até 3 anos de empresa: aumento de 3%</p>
+            - entre 3 e 10 anos: aumento de 12.5%</p>
+            - 10 anos ou mais: aumento de 20%</p>
+        </p>
+        <h3>Calculo de reajuste salarial</h3>
+        <div>
+            Nome do funcionário: <input type="text" name="txtnome" id="txtnome"></p>
+            Salário atual: R$ <input type="number" name="txtsal" id="txtsal"></p>
+            Quanto anos trabalha na empresa: <input type="number" name="txtanostrab" id="txtanostrab"></p>
+
+            <input type="button" value="Calcular reajuste salarial" onclick="calcular()">
+        </div>
+        <div id = 'res'> 
+        </div>
+    </section>
+    <footer>
+        &copy;cursoemvideo
+    </footer>
+     <script src="script.ex.029.js"></script>
+</body>
+</html>

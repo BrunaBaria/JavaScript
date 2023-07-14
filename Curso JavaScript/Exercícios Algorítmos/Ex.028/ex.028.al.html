@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorítimos</title>
+    <link rel="stylesheet" href="style.ex.028.css">
+</head>
+<body>
+
+    <header>
+        <h1>Exercícios de Algoritmos - 028</h1>  
+    </header>    
+    <section>      
+        <h2>
+            Faça um programa que leia a largura e o comprimento de um terreno
+            retangular, calculando e mostrando a sua área em m2. O programa também
+            devemostrar a classificação desse terreno, de acordo com a lista abaixo:
+        </h2>
+        <p>
+            - Abaixo de 100m2 = TERRENO POPULAR</p>
+            - Entre 100m2 e 500m2 = TERRENO MASTER</p>
+            - Acima de 500m2 = TERRENO VIP</p>
+        </p>
+        <div>
+        <p><Label>Informe os dados do terreno nos espaços abaixo:</Label>
+        </p>
+        Largura: <input type="number" name="txtlarg" id="txtlarg"></p>
+        Comprimento:
+        <input type="number" name="txtcompri" id="txtcompri">
+        <p><input type="button" value="Calcular a área" onclick="calcular()">
+        </div>
+    <center><div id="res"> 
+        </div></center>
+        <div id="foto">
+            <center><img id="imagem"src="terreno.jpg" alt="terreno.jpg"></center>
+        </div>
+    </section>
+    <footer>
+        &copy;cursoemvideo
+    </footer>
+     <script src="script.ex.028.js"></script>
+</body>
+</html>

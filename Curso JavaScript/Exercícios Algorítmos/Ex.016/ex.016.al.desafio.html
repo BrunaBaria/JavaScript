@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="style.ex.016.css">
 </head>
 <body>
-<h1>
-    Exercícios de Algoritmos - 016 - Desafio
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <!-- Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um fumante perde 10 minutos de vida a cada cigarro. Calcule quantos dias de vida um fumante perderá e exiba o total em dias-->
+    <section>
+        <h1>Exercícios de Algoritmos - 016 - Desafio</h1>  
+        <h3>CÁLCULO MORTAL</h3>  
+        <h1>Redução do Tempo de Vida de um Fumante</h1>
+  <div>
+    <p>
+        Quantos cigarros você fuma por dia: <input type="number" id="cigarrosInput">
+      </p>
+      <p>
+        Quantos anos você já fumou: <input type="number" id="anosInput">
+      </p>
+        <button onclick="calcularReducao()">Calcular</button>
+  </div>
+  <div id="resultadoReducao">
+  </div>
+    </section>
+<script src="script.ex.016.js"></script>
+<footer>
+    &COPY;cursoemvideo
+</footer>
 </body>
 </html>

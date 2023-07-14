@@ -6,49 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: bisque;
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="style.ex.010.css">
 </head>
 <body>
 <h1>
     Exercícios de Algoritmos - 010 
 </h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <p>Faça um algorítmo que leia a largura e a altura de uma parede. Calcule e mostre a área a ser pintada e a quantidade de tinta necessária para o serviço. Sabendo que cada litro de tinta pinta uma área de 2 metros quadrados</p>
+<section>
+    <p>Faça um algorítmo que leia a largura e a altura de uma parede. Calcule e mostre a área a ser pintada e a quantidade de tinta necessária para o serviço. Sabendo que cada litro de tinta pinta uma área de 2 metros quadrados.</p>
     
     Qual é a largura da parede(em metros)? <input type="number" name="txtnl" id="txtnl"></br>
     Qual é a altura da parede(em metros)? <input type="number" name="txtna" id="txtna">
     <input type="button" value="calcular" onclick="calcular()">
     <div id = "res"></div>
+    <div id ='foto'></div>
+        <center><img id= 'imagem'src="parede" alt=""></center>
+    <footer>
+        &copy;cursoemvideo
+    </footer>
+</section>
+   <script src="script.ex.010.js"></script>
 </body>
-<script>
-    function calcular (){
-        var l = document.querySelector('input#txtnl')
-        var a = document.querySelector('input#txtna')
-        var largura = Number(l.value)
-        var altura = Number(a.value)
-        var area = altura*largura
-        var tinta = area/2
-        res.innerHTML=`A área à ser pintada é de ${area} m² e você precisará de ${tinta} litros de tinta para pintar essa parede.`
-    }
-
-   /* var nome = window.prompt('Qual é o seu nome? ')
-    var largura = Number(window.prompt(`${nome}, Qual é a largura da parede? `))
-    var altura = Number(window.prompt(`Agora me diga qual é a altura da parede? `))
-    var area = largura*altura
-    var tinta = area/2
-    document.write(`${nome}, você precisará de ${tinta} litros de tinta para cobrir a área informada. </br>`)
-    
-    document.write(`Olá, ${nome}!Seu nome em maíusculas fica ${nome.toUpperCase()}</br>`)
-    document.write(`Seu nome em minúsculas fica ${nome.toLowerCase()}</br>`)
-    document.write(`E seu nome possui ${nome.length} letras`)
-    //exercitei o .toUpperCase .toLowerCase .lenght e o document.white
-    //exercitei também o uso de </br> para pular linha 
-    */
-</script>
 </html>

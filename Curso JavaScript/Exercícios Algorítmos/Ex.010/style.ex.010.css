@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(136, 203, 248);
+    font: normal 14pt arial;
+}
+h1{
+    font:bolder 16pt;
+    text-align: center;
+}
+section{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 500px;
+    margin: auto;
+}
+div{
+    text-align: center;
+    margin: center;
+    margin-top: 10px;
+}
+footer{
+    font-style: italic;
+    text-align: center;
+}
+img{
+    margin-top: 10px;
+    margin: center;
+    text-align: center;
+    width: 300px;
+    
+}

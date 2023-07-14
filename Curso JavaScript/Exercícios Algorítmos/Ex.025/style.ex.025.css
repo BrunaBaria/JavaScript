@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(163, 177, 241); 
+}
+h1{
+    font:normal 14pt arial;
+}
+h2{
+    font: normal 12pt arial;
+}
+section{
+    background-color: antiquewhite;
+}
