@@ -15,15 +15,23 @@
     </header>    
     <section>      
         <h2>
-        
+        Simulador de Financiamento Imobiliário
         </h2>
         <p>
            Escreva um programa para aprovar ou não o empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado.
         </p>
         <div>
-            
+            Qual é o valor do imóvel: R$ <input type="number" name="txtcasa" id="txtcasa"></p>
+            Quanto é o salário do comprador?: R$ <input type="number" name="txtsal" id="txtsal"></p>
+            Enquantos anos pretende pagar o financiamento?: <input type="number" name="txtanos" id="txtanos"></p>
+            <input type="button" value="consultar" onclick="calcular()">
+
+
         </div>
-        <div></div>
+        <div id="foto">
+            <img src="imagem" alt="">
+        </div>
+        <div id="res"></div>
     </section>
     <footer>
         &copy;cursoemvideo
