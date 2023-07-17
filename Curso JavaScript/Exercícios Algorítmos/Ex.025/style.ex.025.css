@@ -2,11 +2,23 @@ body{
     background-color: rgb(163, 177, 241); 
 }
 h1{
-    font:normal 14pt arial;
+    font:bold 14pt arial;
+    text-align: center;
 }
 h2{
-    font: normal 12pt arial;
+    font: bold 12pt arial;
+    text-align: justify;
 }
 section{
-    background-color: antiquewhite;
+    background-color: rgb(252, 250, 248);
+    padding: 10px;
+    margin: auto;
+    width: 500px;
+
+}footer{
+    text-align: center;
+    margin-top: 10px;
+}
+div#res{
+    margin-top: 10px;
 }

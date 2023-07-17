@@ -16,14 +16,15 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px black;
+    text-align: center;
 }
 footer{
     font-style: italic;
     text-align: center;
     margin-top: 10px;
 }
-div#res{
+div#resultado{
     margin-top: 10px;
-    font: bold 14pt;
+    font: bold 16pt;
 }
 
