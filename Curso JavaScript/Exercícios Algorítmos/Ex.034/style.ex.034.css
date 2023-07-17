@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(192, 201, 252);
+    background-color: rgb(192, 223, 252);
     
 }
 h1{
@@ -10,7 +10,7 @@ h2{
     font: normal 14pt arial;
 }
 section{
-    background-color:rgb(231, 235, 238) ;
+    background-color:rgba(231, 235, 238, 0.548) ;
     padding: 10px;
     border-radius: 10px;
     width: 500px;
@@ -22,6 +22,14 @@ footer{
     font-style: italic;
     text-align: center;
     margin-top: 10px;
+}
+div#res{
+    margin-top: 10px;
+    font: normal 12pt arial;
+   
+}
+input{
+    width: 50px;
 }
 
 
