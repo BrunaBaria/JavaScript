@@ -6,8 +6,13 @@ function calcular(){
     var recompensa = 0
 
     if(horas <= 10){
-        var recompensa = horas*2
-        res.innerHTML = `Você realizou <strong>${horas}</strong> em exercícios e receberá R$ ${recompensa.toFixed(2)}`
+        var recompensa = (horas*2)*ganho
+        
+    }else if(horas <=20){
+        var recompensa = (horas*5)*ganho
+    }else{
+        var recompensa = (horas*10)*ganho
     }
+    res.innerHTML = `Você realizou <strong>${horas} horas</strong> em exercícios e receberá <strong>R$ ${recompensa.toFixed(2).replace('.',',')}</strong>`
 }
     

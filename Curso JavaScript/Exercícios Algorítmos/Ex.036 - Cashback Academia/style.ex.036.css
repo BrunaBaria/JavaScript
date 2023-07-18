@@ -18,7 +18,7 @@ section{
     background-color:rgba(231, 235, 238, 0.596) ;
     padding: 10px;
     border-radius: 10px;
-    width: 500px;
+    width: 600px;
     margin: auto;
     box-shadow: 5px 5px 10px black;
     
@@ -27,6 +27,11 @@ footer{
     font-style: italic;
     text-align: center;
     margin-top: 10px;
+    color: aliceblue;
+}
+div#res{
+    margin-top: 10px;
+
 }
 
 
