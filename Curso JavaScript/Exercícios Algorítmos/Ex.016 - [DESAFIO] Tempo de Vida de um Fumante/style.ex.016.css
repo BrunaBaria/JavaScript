@@ -3,7 +3,7 @@ body{
     font: normal 14pt arial;
 }
 h1{
-    font:bolder 16pt arial;
+    font:bolder 14pt arial;
     text-align: center;
 }
 h3{
@@ -15,6 +15,8 @@ section{
     border-radius: 10px;
     width: 500px;
     margin: auto;
+    font: normal 12pt arial;
+    text-align: center;
 }
 footer{
     margin-top: 10px;
@@ -22,8 +24,10 @@ footer{
     font-style: italic;
     text-align: center;
 }
-div{
+div#resultadoReducao{
     margin-top: 10px;
     font: normal 12pt;
-    margin: center;
+}
+input{
+    width: 70px;
 }
