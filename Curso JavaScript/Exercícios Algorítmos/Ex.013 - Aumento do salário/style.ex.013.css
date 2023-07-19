@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(239, 102, 71);
+    font: normal 14pt arial;
+}
+h1{
+    font:bolder 14pt;
+    text-align: center;
+}
+h2{
+    font: bolder 12pt arial;
+    text-align: center;
+}
+section{
+    background-color: rgba(240, 248, 255, 0.653);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.842);
+    margin: auto;
+    font: normal 12pt arial;
+    width: 500px;
+
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color: aliceblue;
+    font: normal 12pt arial;
+}
+div#res{
+    margin-top: 10px; 
+    font: 12pt; 
+}
+input{
+    width: 70px;
+}

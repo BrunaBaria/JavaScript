@@ -6,30 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="style.ex.013.css">
+
 </head>
 <body>
-<h1>
-    Exercícios de Algoritmos - 013
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <p>Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.</p>
-    Informe o salário do funcionário: <input type="number" name="txtsal" id="txtsal">
-    <input type="button" value="calcular" onclick="calcular()">
-    <div id="res"></div>
+    <section>
+        <h1>
+            Exercícios de Algoritmos - 013
+        </h1>  
+        
+            <p>Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.</p>
+            <h2>Reajuste de Salário</h2>  
+            Informe o salário do funcionário: R$ <input type="number" name="txtsal" id="txtsal">
+            <input type="button" value="calcular" onclick="calcular()">
+            <div id="res"></div>
+    </section>
+
 </body>
-<script>
-    function calcular(){
-        var sal =document.querySelector('input#txtsal')
-        var salario = Number(sal.value)
-        var aumento = salario+(salario*(15/100))
-        res.innerHTML = `O salário do funcionário com 15% de aumento será de <strong>R$ ${aumento}</strong>`
-    }
-</script>
+    <script src="script.ex.013.js"></script>
+    <footer>&copy;cursoemvideo</footer>
 </html>
