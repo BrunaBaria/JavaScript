@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(105, 113, 36);
+}
+h1{
+    color: aliceblue;
+    font: bolder 12pt arial;
+    text-align: center;
+}
+h2{
+    font: bolder 12pt arial;
+    text-align: center;   
+}
+section{
+    background-color: rgba(240, 248, 255, 0.802);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.889);
+    margin: auto;
+    width: 500px;
+
+}
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+input{
+    width: 70px;
+}
+div#res{
+    margin-top: 10px;
+}
