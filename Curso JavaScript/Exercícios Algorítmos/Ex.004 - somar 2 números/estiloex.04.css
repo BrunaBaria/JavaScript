@@ -4,22 +4,28 @@ body{
     background-color: rgb(235, 163, 163);
    }
    h1{
-    font:normal;
+    font:bolder 14pt arial;
+    text-align: center;
    }
    section{
     background-color: rgb(196, 197, 212);
     border-radius: 15px;
     padding: 10px;
     box-shadow:5px 5px 10px rgba(0, 0, 0, 0.466);
-    width: 600px;
+    width: 500px;
+    margin: auto;
    }
    footer{
+    text-align: center;
+    font: italic 10pt arial;
     font-style: italic;
+    margin-top: 10px;
+
    }
    p{
-    font:normal 14pt arial;
+    font:normal 12pt arial;
    }
-   div#resultado{
-    margin-top: 20px;
+   div#Resultado{
+    margin-top: 10px;
    }
    
