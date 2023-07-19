@@ -1,6 +1,5 @@
 body{
-    background-color: rgb(74, 74, 74);
-    
+    background-color: rgb(74, 74, 74); 
 }
 h1{
     font:bold 16pt arial;
@@ -8,7 +7,8 @@ h1{
     color: aliceblue;
 }
 h2{
-    font: normal 14pt arial;
+    font: bold 14pt arial;
+    text-align: center;
 }
 section{
     background-color:rgb(231, 235, 238) ;
@@ -16,14 +16,14 @@ section{
     border-radius: 10px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px black;
-    
+    box-shadow: 5px 5px 10px black; 
 }
 footer{
     font-style: italic;
     text-align: center;
     margin-top: 10px;
     color: aliceblue;
+}div{
+    text-align: center;
+    margin-top: 10px;
 }
-
-
