@@ -6,40 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="style.ex.018.css">
 </head>
+<header>
+    <h1>
+        Exercícios de Algoritmos - 018
+    </h1> 
+</header>
 <body>
-<h1>
-    Exercícios de Algoritmos - 018
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <!-- Faça um programa que leia o ano de nascimento de uma pessoa,calcule a idade dela e depois mostre se ela pode ou não votar.-->
-    Qual o ano do seu nascimento? <input type="number" name="txtano" id="txtano">
-    <input type="button" value="Verifique" onclick="calcular()">
+   <section>
+    Faça um programa que leia o ano de nascimento de uma pessoa, calcule a idade dela e depois mostre se ela pode ou não </p>
+    <h2>Obrigatoriedade de voto</h2>
+    Qual o ano do seu nascimento? 
+    <input type="number" name="txtano" id="txtano" min="0">
+    <input type="button" value="Verifique" onclick="calcular()"></p>
+    <div id="foto">
+        <img id="imagem"src="imagem" alt="">
+    </div>
     <div id="resposta"></div>
+   </section>
 </body>
-<script>
-    function calcular(){
-        var agora = new Date()
-        var ano =agora.getFullYear()
-        var txtano =document.querySelector('input#txtano')
-        var ano_nasc= Number(txtano.value)
-        var res = document.querySelector('div#resposta')
-        var idade = ano-ano_nasc
-        res.innerHTML=`Você está com ${idade} anos`
-        if (idade < 16){
-            res.innerHTML +=`<p>E você não pode votar</p>`
-        }else if (idade <18 || idade>=65){
-            res.innerHTML+= `<p>Seu voto é facultativo</p>`
-        }else{ 
-            res.innerHTML +=`<p>E é obrigado(a) a votar</p>`
-        }
-    }
-</script>
+<script src="script.ex.018.js"></script>
+<footer>&copy;cursoemvideo</footer>
 </html>
