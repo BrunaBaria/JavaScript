@@ -6,33 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="style.ex.014.css">
 </head>
 <body>
-<h1>
-    Exercícios de Algoritmos - 014
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <!--A locadora de veículos precisa da sua ajuda para cobrar seus serviços.Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, sabendo que o carro custa R$ 90,00 por dia e R$ 0,20 por Km rodado. -->
-   Quantos km foram percorridos?<input type="number" name="txtkm" id="txtkm"></br>
-   Quantos diárias?: <input type="number" name="txtdias" id="txtdias">
-   <input type="button" value="calcular" onclick="calcular()">
-   <div id="res"></div>
+    <section>
+        <h1>
+            Exercícios de Algoritmos - 014
+        </h1>    
+            A locadora de veículos precisa da sua ajuda para cobrar seus serviços.Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, sabendo que o carro custa R$ 90,00 por dia e R$ 0,20 por Km rodado.
+            <p> Quantos km foram percorridos?
+            <input type="number" name="txtkm" id="txtkm" min="0"></p>
+            Quantos diárias?: 
+            <input type="number" name="txtdias" id="txtdias" min="0"></p>
+            <input type="button" value="calcular" onclick="calcular()">
+            <div id="res"></div>
+    </section>
+
 </body>
-<script>
-   function calcular(){
-    var txtkm = document.querySelector('input#txtkm')
-    var txtdias = document.querySelector('input#txtdias')
-    var km = Number(txtkm.value)
-    var dia = Number(txtdias.value)
-    var locação = (90*dia)+(0.20*km)
-    res.innerHTML=`O preço total à pagar pela locação é <strong>R$ ${locação}</strong>`
-   }
-</script>
+    <script src="script.ex.014.js"></script>
+    <footer>&copy;cursoemvideo</footer>
 </html>
