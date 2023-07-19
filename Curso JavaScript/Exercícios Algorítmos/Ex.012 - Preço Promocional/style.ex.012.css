@@ -1,0 +1,24 @@
+body{
+    background-color: #27267d;
+    font: normal 12pt arial;
+}
+h1{
+    font:bolder 14pt;
+    text-align: center;
+}
+section{
+    background-color: rgba(240, 248, 255, 0.744);
+    padding: 10px;
+    border-radius: 10px;
+    margin:auto;
+    
+    width: 500px;
+}
+div#res{
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+}
