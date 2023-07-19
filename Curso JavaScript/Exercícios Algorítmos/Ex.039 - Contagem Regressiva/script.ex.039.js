@@ -1,8 +1,8 @@
 function contar(){
     var res = document.querySelector('div#res')
-    var c = 11
+    var c = 10
     while (c >3){
-        c--
         res.innerHTML += ` ${c} `
+        c--
     }res.innerHTML +=`ACABOU!` 
 } 

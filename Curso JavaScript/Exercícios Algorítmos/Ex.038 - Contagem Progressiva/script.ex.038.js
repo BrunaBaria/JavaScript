@@ -1,8 +1,8 @@
 function contar(){
     var res = document.getElementById('res')
-    var c = 5
+    var c = 6
     while (c <11 ){
-        c++
         res.innerHTML += ` ${c}`
+        c++
     }res.innerHTML += ` ACABOU!`
 }
