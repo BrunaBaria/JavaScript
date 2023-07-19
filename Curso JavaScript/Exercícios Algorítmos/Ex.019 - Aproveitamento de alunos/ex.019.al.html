@@ -6,41 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="style.ex.019.css">
 </head>
-<body>
-<h1>
-    Exercícios de Algoritmos - 019
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <!-- Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento(se ficou acima da média 7.0).-->
-    Nome do(a) aluno(a): <input type="text" id="nomeinput"></br>
-    Nota da prova 1: <input type="number" name="txtn1" id="txtn1"></br>
-    Nota da prova 2: <input type="number" name="txtn2" id="txtn2"></br>
-    <input type="button" value="calcular a média" onclick="calcular()">
-    <div id="resultado"></div>
+<header>
+    <h1>
+        Exercícios de Algoritmos - 019
+    </h1>   
+</header>
+<section>
+    <body>
+        <p>Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento(se ficou acima da média 7.0).</p>
+        <h2>Aproveitamento do aluno</h2>
+       
+        Nome do(a) aluno(a): <input type="text" id="nomeinput"></p>
+        Nota da prova 1: <input type="number" name="txtn1" id="txtn1" min="0" max="10"></p>
+        Nota da prova 2: <input type="number" name="txtn2" id="txtn2" min="0" max="10"></p>
+        <input type="button" value="calcular a média" onclick="calcular()">
+        <div id="resultado"></div>
+</section>
 </body>
-<script>
-    function calcular(){
-        var nome =document.querySelector('input#nomeinput').value
-        var txtn1=document.querySelector('input#txtn1')
-        var txtn2=document.querySelector('input#txtn2')
-        var n1=Number(txtn1.value)
-        var n2=Number(txtn2.value)
-        var res =document.querySelector('div#resultado')
-        var média=(n1+n2)/2
-        res.innerHTML = `<p>A média de ${nome} é ${média}</p>`
-        if (média >=7){
-            res.innerHTML += `${nome} teve um bom aproveitamento</p>`
-        }else{
-        res.innerHTML +=`<p>${nome} teve um aproveitamento <strong>abaixo</strong> da média</p>`
-        }
-    }
-</script>
+    <script src="script.ex.019.js"></script>
+    <footer>&copy;cursoemvideo</footer>
 </html>
