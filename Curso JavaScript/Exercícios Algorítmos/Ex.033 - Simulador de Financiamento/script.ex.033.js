@@ -15,10 +15,10 @@ function calcular(){
     img.setAttribute('id','foto')
 
     if(parcela<=percentual_comprometido){
-        res.innerHTML = `<strong>FINANCIAMENTO APROVADO</strong>`
+        res.innerHTML += `<strong>FINANCIAMENTO APROVADO</strong></p>`
         img.setAttribute('src','aprovado.png')
     }else{
-        res.innerHTML = `<strong>FINANCIAMENTO NEGADO</strong> - renda insuficiente`
+        res.innerHTML += `<strong>FINANCIAMENTO NEGADO</strong> - renda insuficiente</p>`
         img.setAttribute('src','negado.png')
     }
     res.appendChild(img)

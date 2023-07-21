@@ -25,15 +25,13 @@ footer{
     text-align: center;
 }
 div#res{
-    margin-top: 5px;
     text-align: center;
-    margin-block-end: auto;
-    
-}
-img{
-    margin-top: 15px;
     margin: auto;
-    width: 250px;
+   
+}
+div#img{
+    text-align: center;
+    margin: auto;
 
 }
 

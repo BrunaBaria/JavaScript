@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Algorítimos</title>
-<style>
-    body{background-color: rgb(250, 240, 228);
-        font: normal 14pt arial;
-    }
-    h1{font:bolder 16pt}
-</style>
+    <link rel="stylesheet" href="style.ex.023.css">
 </head>
+<header>
+    <h1>
+        Exercícios de Algoritmos - 023
+    </h1>    
+        
+</header>
 <body>
-<h1>
-    Exercícios de Algoritmos - 023
-</h1>    
-    <p>Professor Gustavo Guanabara</p>
-    <p>Executado por Bruna Baria</p>
-    <!--Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia o nome, o sexo, e o valor das compras do cliente e calcule o preço com desconto. Sabendo que: Homens ganham 5% de desconto e Mulheres 13% de desconto-->
+    <section>
+    Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia o nome, o sexo, e o valor das compras do cliente e calcule o preço com desconto. Sabendo que: Homens ganham 5% de desconto e Mulheres 13% de desconto.</p>
+    <h2>Promoção dia das Mulheres</h2>
+   <div>
+        Você é:</p>
+            <input type="radio" name="radsex" id="fem" checked>
+            <label for="fem">Mulher</label>
+            <input type="radio" name="radsex" id="mas">
+            <label for="mas">Homem</label> </p>
+        Qual é o seu nome?: 
+            <input type="text" name="txtnome" id="txtnome"></p>
+        Qual é o valor da compra?: R$ 
+            <input type="number" name="txtcompra" id="txtcompra" min="0"></p>
+            <input type="button" value="calcular desconto" onclick="calcular()">
+    </div> 
+    <div id="res"></div>
+    </section>
 </body>
+<script src="script.ex.023.js"></script>
+        <footer>&copy;cursoemvideo</footer>
 </html>
