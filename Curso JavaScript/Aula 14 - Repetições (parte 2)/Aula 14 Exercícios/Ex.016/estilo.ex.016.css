@@ -17,6 +17,8 @@ section{
     width: 300px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.699);
+   
+
 }
 footer{
     color: aliceblue;
@@ -24,6 +26,9 @@ footer{
     font-style: italic;
 }
 div#res{
-    margin: 10px;
+    margin-top: 10px;
     font:normal 12pt arial;
+}
+input{
+    width: 70px;
 }
