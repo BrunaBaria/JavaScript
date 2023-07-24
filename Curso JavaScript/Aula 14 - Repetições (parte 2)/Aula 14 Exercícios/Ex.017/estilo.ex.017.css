@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(238, 146, 139);
+    background-color: rgb(61, 79, 121);
     font: normal 15pt Arial;
 }
 header{
@@ -11,7 +11,7 @@ section{
     background-color: aliceblue;
     border-radius: 20px;
     padding: 20px;
-    width: 300px;
+    width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.699);
 }
