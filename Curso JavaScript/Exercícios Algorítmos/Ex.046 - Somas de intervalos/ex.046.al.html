@@ -15,17 +15,18 @@
     </header>    
     <section>      
         <h2>
-            Contagem com Marcador
+            Soma de intervalos
         </h2>
         <p>
             Crie um programa que calcule e mostre na tela o resultado da soma entre 6+ 8+ 10+ 12+ 14+....+98 +100.</br>
 
         </p>
-        <div>
-            
-            <input type="button" value="Iniciar" onclick="contar()"> 
+        <div id = "dados">
+            Informe o número de início: <input type="number" name="n1" id="txtn1"></p>
+            Informe o número de fim: <input type="number" name="n2" id="txtn2"></p>
+            <input type="button" value="Somar intervalo" onclick="somar()"> 
         </div>
-        <div id="res"></div>
+        <div id="res">Contando...</div>
     </section>
     <footer>
         &copy;cursoemvideo
