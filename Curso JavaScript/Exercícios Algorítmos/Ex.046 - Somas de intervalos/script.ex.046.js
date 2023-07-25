@@ -1,15 +1,18 @@
 function somar(){
-    var txtn1 = document.getElementById('txtn1')
-    var txtn2 = document.getElementById('txtn2')
-    var i = 2
-    var res = document.getElementById('res')
+    let txtn1=document.getElementById('txtn1')
+    let txtn2=document.getElementById('txtn2')
 
-    var n1 = Number(txtn1.value)
-    var n2 = Number(txtn2.value)
     
-    for(var c=n1;c<=n2;c+=i)
-        res.innerHTML+=` +${c} `
-        var intervalo = somar(n1,n2);
-        res.innerHTML+=` A soma desse intervalo é ${intervalo}`
-    
-}   
+    let inicio = Number(txtn1.value)
+    let fim = Number(txtn2.value)
+    let soma = 0;
+    let res = document.getElementById('res')
+
+    res.innerHTML=``
+    for(let c= inicio; c<=fim; c +=2){
+        res.innerHTML += ` +${c} `
+        soma +=c;
+       
+    }
+    res.innerHTML+=`</br> O resultado da soma é ${soma}`
+}
