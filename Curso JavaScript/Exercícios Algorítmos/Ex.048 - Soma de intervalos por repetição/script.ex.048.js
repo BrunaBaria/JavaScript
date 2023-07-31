@@ -1,4 +1,4 @@
-function contar(){
+function somar(){
   let txtn1 = document.getElementById('txtn1')
   let txtn2 = document.getElementById('txtn2')
   let txtn3 = document.getElementById('txtn3')
@@ -15,11 +15,14 @@ function contar(){
   let n5 = Number.parseInt(txtn5.value)
   let n6 = Number.parseInt(txtn6.value)
   let n7 = Number.parseInt(txtn7.value)
-  let soma=0
 
-  for(let c=1;c<=7;c++){
-    let i = Number.parseInt(getElementById('txt'+c).value)
-    soma+=i;
-  }  
-  res.innerHTML=`A soma entre esses números é ${soma}`
+
+  if (isNaN(n1) || isNaN(n2) || isNaN(n3) || isNaN(n4) || isNaN(n5) || isNaN(n6) || isNaN(n7)) {
+    res.innerHTML = 'Por favor, preencha todos os campos com números inteiros.';
+  } else {
+    let soma = n1 + n2 + n3 + n4 + n5 + n6 + n7;
+    res.innerHTML = `A soma entre esses números é ${soma}`;
 }
+ 
+} 
+ 

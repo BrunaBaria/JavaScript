@@ -2,7 +2,7 @@ function contar(){
     
     var txtn1 = document.getElementById('txtn1')
     var txtn2 = document.getElementById('txtn2')
-    var inc = document.getElementById('txtin')
+    var txtin = document.getElementById('txtin')
 
     var n1= Number(txtn1.value)
     var n2= Number(txtn2.value)
