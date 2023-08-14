@@ -4,7 +4,7 @@ valores.sort()
 
 //console.log(valores)  //escrevendo como um vetor
 
-//escrevendo de uma forma errada e repetida
+//escrevendo de uma forma 'errada' e repetida
 /*
 console.log(valores[0])
 console.log(valores[1])
