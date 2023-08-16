@@ -15,12 +15,16 @@ function contar(){
           i = 1
      }
      if(n1<n2){
-          for(var c=n1;c<=n2;c+=i){
-                res.innerHTML +=` ${c} `
+          while(n1<=n2){
+                res.innerHTML +=` ${n1} `
+                n1=n1+i
           }
      }else{
-        for(var c=n1; c>=n2;c-=i)
-        res.innerHTML += ` ${c} `
+        while(n1>=n2){
+          res.innerHTML += ` ${n1} `
+          n1=n1-i
+        }
+        
    }res.innerHTML += ` Acabou!` 
 }
      
