@@ -13,18 +13,19 @@
 <body>
     <h1>Teste de Nacionalidade</h1>
     <p>De qual país você nasceu?</p>
-    <input type="text" name="país" id="país">
+    <input type="text" name="pais" id="pais">
     <input type="button" value="verificar" onclick="verificar()">
     <div id="res"></div>
 </body>
 <script>
     function verificar(){
-        var país = window.document.querySelector('input#país')
+        var pais = window.document.querySelector('input#pais').value
         var res = window.document.querySelector('div#res')
-        if (país = 'Brasil'){
+        if (pais === 'Brasil'){
             res.innerHTML = `você é <strong>Brasileiro(a)</strong>`
-        }
+        }else{
             res.innerHTML = `Você é <strong>Estrangeiro</strong>`
+        }      
     }
 
 </script>

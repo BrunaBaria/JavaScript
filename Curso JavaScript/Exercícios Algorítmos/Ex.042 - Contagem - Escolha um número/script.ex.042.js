@@ -1,11 +1,11 @@
 function contar(){
-    var res = document.querySelector('div#res')
-    var c = 1
-    var txtn = document.getElementById('txtn')
-    var n = Number.parseInt(txtn.value)
-    res.innerHTML=''
+    let res = document.querySelector('div#res')
+    let num = document.querySelector('input#txtn')
+    let n = Number.parseInt(txtn.value)
+    let c = 0
+
     while(c<=n){
-        res.innerHTML+=` ${c} `
+        res.innerHTML +=` ${c} `
         c++
-    } res.innerHTML += ` ACABOU! `
+    }res.innerHTML +=` Acabou! `
 }

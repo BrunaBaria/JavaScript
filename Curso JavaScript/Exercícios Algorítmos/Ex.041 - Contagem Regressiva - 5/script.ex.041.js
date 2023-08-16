@@ -1,9 +1,11 @@
 function contar(){
-    var res = document.querySelector('div#res')
-    var c = 100
-    res.innerHTML=''
+    let res = document.querySelector('div#res')
+    let c = 100
+
+    res.innerHTML = ''
     while(c>=0){
-        res.innerHTML += ` ${c} ` 
+        res.innerHTML +=` ${c} `
         c=c-5
-    }res.innerHTML +=`ACABOU!`
+        
+    }res.innerHTML += ` Acabou! `
 }
