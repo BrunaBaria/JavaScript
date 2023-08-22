@@ -1,13 +1,12 @@
 function contar(){
-    var txtn1 = document.getElementById('txtn1')
-    var txtn2 = document.getElementById('txtn2')
-    var txtn3 = document.getElementById('txtn3')
+     let res = document.querySelector('div#res')
+     let txtn1= document.querySelector('input#txtn1')
+     let txtn2=document.querySelector('input#txtn2')
+     let txtn3=document.querySelector('input#txtn3')
 
-    var n1= Number(txtn1.value)
-    var n2= Number(txtn2.value)
-    var i = Number(txtn3.value)
-
-    var res = document.getElementById('res')
+     let c = Number.parseInt(txtn1.value)
+     let n2 = Number.parseInt(txtn2.value)
+     let i = Number.parseInt(txtn3.value)
     
      res.innerHTML=``
      if(i<=0){
@@ -15,17 +14,11 @@ function contar(){
           i = 1
      }
      if(n1<n2){
-          while(n1<=n2){
-                res.innerHTML +=` ${n1} `
-                n1=n1+i
+          for( c=n1;c<=n2;c+=i){
+                res.innerHTML +=` ${c} `
           }
      }else{
-        while(n1>=n2){
-          res.innerHTML += ` ${n1} `
-          n1=n1-i
-        }
-        
+        for(c=n1; c>=n2;c-=i)
+        res.innerHTML += ` ${c} `
    }res.innerHTML += ` Acabou!` 
 }
-     
-   
