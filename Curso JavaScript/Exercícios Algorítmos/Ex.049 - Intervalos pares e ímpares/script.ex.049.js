@@ -1,15 +1,21 @@
 function verificar(){
-    let numPares = 0
-    let numImpar=0
+    let res = document.querySelector('div#res')
+    let txtn1 = document.querySelector('input#txtn1')
 
-    let res = document.getElementById('res')
-    for (let i =1; i<=6;i++){
-        let num =Number(document.getElementById ('num'+i).value)
-        if(num % 2 === 0){
-            numPares++
+    let n1 = Number.parseInt(txtn1.value)
+    let c = 0
+    let par = 0
+    let impar = 0
+
+    res.innerHTML =''
+    while(c<6){
+        res.innerHTML +=` +${n1}`
+        if (n1 % 2===0){
+            ++par   
         }else{
-            numImpar++
+            ++impar 
         }
-    }
-   res.innerHTML =`Você digitou ${numPares} números pares e ${numImpar} números ímpares`
+        ++n1
+        ++c
+    } res.innerHTML += `<br>Você digitou ${par} números pares e ${impar} números ímpares`;
 }
