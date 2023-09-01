@@ -1,8 +1,6 @@
 function verificar(){
     let res = document.querySelector('div#res')
-    let txtn1 = document.querySelector('input#txtn1')
-
-    let n1 = Number.parseInt(txtn1.value)
+    let n1 = Number.parseInt(document.querySelector('input#txtn1').value)
     let c = 0
     let par = 0
     let impar = 0

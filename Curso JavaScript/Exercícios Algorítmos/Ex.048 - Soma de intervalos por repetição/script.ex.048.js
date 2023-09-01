@@ -1,8 +1,7 @@
 function somar(){
   let res = document.querySelector('div#res')
-  let txtn1 = document.querySelector('input#txtn1')
+  let n1 = Number.parseInt(document.querySelector('input#txtn1').value)
 
-  let n1 = Number.parseInt(txtn1.value)
   let soma = 0
   let c = 0
   
