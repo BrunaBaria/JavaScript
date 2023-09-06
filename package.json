@@ -1,0 +1,16 @@
+{
+  "name": "javascript-basico",
+  "version": "1.0.0",
+  "description": "Olá, Eu sou a Bruna Baria. Graduada em Administração e pós-graduanda em Coding & Tech Journey na FIAP, estou em uma jornada para me tornar uma Desenvolvedora. Também estou participando do BootCamp do Santander para Java Backend pela DIO. \r ## Conecte-se comigo\r [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=fff)](https://https://github.com/BrunaBaria)\r [![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)]((https://www.linkedin.com/in/bruna-baria/))\r [![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-000?style=for-the-badge)](https://web.dio.me/users/brumorimitsu/)\r [![Perfil Alura](https://img.shields.io/badge/-Meu%20Perfil%20na%20alura-000?style=for-the-badge)](https://cursos.alura.com.br/user/bruna290790)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type":"module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
