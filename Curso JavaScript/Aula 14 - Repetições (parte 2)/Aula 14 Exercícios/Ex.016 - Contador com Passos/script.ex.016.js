@@ -1,17 +1,14 @@
 function contar(){
     let res = document.getElementById('res')
-    let ini= document.getElementById('txti')
-    let fim=document.getElementById('txtf')
-    let passo=document.getElementById('txtp')
+    let i= Number(document.getElementById('txti').value)
+    let f=Number(document.getElementById('txtf').value)
+    let p=Number(document.getElementById('txtp').value)
 
-    if(ini.value.length ==0 || fim.value.length==0 || passo.value.length==0){
+    if(i.length ==0 || f.length==0 || p.length==0){
         res.innerHTML=`Impossível contar`
         //window.alert('[ERRO] Faltam valores!')
     }else{
         res.innerHTML = 'Contando: </br>'
-        let i = Number(ini.value)
-        let f = Number(fim.value)
-        let p = Number(passo.value)
         res.innerHTML = ``
         if(p<=0){
             window.alert('Passo inválido! Considerando Passo = 1')
