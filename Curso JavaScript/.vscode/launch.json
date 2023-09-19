@@ -6,6 +6,18 @@
     "configurations": [
         
         {
+            "name": "Advpl Debug",
+            "type": "advpl",
+            "request": "launch",
+            "args": [],
+            "cwd": "",
+            "programRun": "${command:AskForProgramName}",
+            "stopOnEntry": false,
+            "enviromentInfo": "${command:GetEnvInfos}",
+            "workspace": "${workspaceFolder}/"
+        },
+        
+        {
             "type": "node",
             "request": "launch",
             "name": "Iniciar o Programa",

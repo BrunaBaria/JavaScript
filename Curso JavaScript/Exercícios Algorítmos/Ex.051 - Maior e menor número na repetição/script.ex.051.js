@@ -12,7 +12,7 @@ function informar(){
     let n8 = Number(document.querySelector('input#txtnum8').value)
 
     let numeros = [n1, n2, n3, n4, n5, n6, n7, n8]
-    numeros.sort()
+    numeros.sort() //CUIDADO! O .sort() deixa os elementos em ordem lexicográfica e pressupõe que todos os elementos são strings
  
     res.innerHTML =''
     res.innerHTML+=(`Os valores informados foram:  ${numeros}`)
