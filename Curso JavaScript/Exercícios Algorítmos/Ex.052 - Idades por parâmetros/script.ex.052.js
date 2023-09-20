@@ -29,7 +29,7 @@ function verificarIdades(){
         
         if ( idades [c] >= 18){
             maior18 ++;
-        } else if ( idades[c] <= 5){
+        } else if ( idades[c] < 5){
             menor5 ++
         } 
         

@@ -19,16 +19,59 @@
         </h2>
         <p>
             Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final:</br>
-            a) Quantos homens foram cadastrados </br>
-            b) Quantas mulheres foram cadastradas</br>
-            c) Idade média do grupo</br>
-            d) Quantas mulheres tem mais de 20 anos
+            a- Quantos homens foram cadastrados </br>
+            b- Quantas mulheres foram cadastradas</br>
+            c- Idade média do grupo</br>
+            d- Quantas mulheres tem mais de 20 anos
         </p>
-        <div>
-            
-            <input type="button" value="Iniciar" onclick="contar()"> 
-        </div>
-        <div id="res"></div>
+            <div id = "pessoa1">
+            <p> Pessoa 1: 
+            Informe sua idade e sexo:</p> 
+                <input type="number" name="txtp1" id="txtp1" min="0"> 
+                <input type="radio" name="radsex1" id="mas"checked >
+                    <label for="mas">Masculino</label>
+                <input type="radio" name="radsex1" id="fem">
+                    <label for="fem">Feminino</label>
+            </p>
+            </div>
+            <div id = "pessoa2">
+            <p> Pessoa 2: 
+                Informe sua idade e sexo:</p> <input type="number" name="txtp2" id="txtp2" min="0"> 
+                <input type="radio" name="radsex2" id="mas"checked >
+                    <label for="mas">Masculino</label>
+                <input type="radio" name="radsex2" id="fem">
+                    <label for="fem">Feminino</label>
+            </p>
+            </div>
+            <div id = "pessoa3">
+            <p> Pessoa 3: 
+                Informe sua idade e sexo:</p> <input type="number" name="txtp3" id="txtp3" min="0"> 
+                <input type="radio" name="radsex3" id="mas"checked >
+                    <label for="mas">Masculino</label>
+                <input type="radio" name="radsex3" id="fem">
+                    <label for="fem">Feminino</label>
+            </p>
+            </div>
+            <div id = "pessoa4">
+            <p> Pessoa 4: 
+                Informe sua idade e sexo:</p> <input type="number" name="txtp4" id="txtp4" min="0"> 
+                <input type="radio" name="radsex4" id="mas"checked >
+                    <label for="mas">Masculino</label>
+                <input type="radio" name="radsex4" id="fem">
+                    <label for="fem">Feminino</label>
+            </p>
+            </div>
+            <div id = "pessoa5">
+            <p> Pessoa 5: 
+                Informe sua idade e sexo:</p> <input type="number" name="txtp5" id="txtp5" min="0"> 
+                <input type="radio" name="radsex5" id="mas"checked >
+                    <label for="mas">Masculino</label>
+                <input type="radio" name="radsex5" id="fem">
+                    <label for="fem">Feminino</label>
+            </p>
+            </div>
+            <p><input type="button" value="Iniciar" onclick = "verificarFormularios()"> </p>
+            <div id="res"></div>
     </section>
     <footer>
         &copy;cursoemvideo
